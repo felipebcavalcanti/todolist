@@ -31,9 +31,7 @@
     color: var(--gray-100);
 }
 
-.input:focus {
-    outline: transparent;
-}
+
 
 .button {
     width: 5.6rem;

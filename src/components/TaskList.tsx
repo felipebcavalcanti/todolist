@@ -1,7 +1,7 @@
 import logo from "../assets/Clipboard.svg";
-import style from "./Comments.module.css";
+import style from "./TaskList.module.css";
 
-export function Comments() {
+export function TaskList() {
     return (
         <div className={style.content}>
             <div className={style.top}>
