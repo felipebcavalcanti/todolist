@@ -1,34 +1,34 @@
-import logo from "../assets/Clipboard.svg";
+
 import style from "./TaskList.module.css";
+import { Trash } from "phosphor-react";
+import { NoTask } from "./NoTask";
 
-export function TaskList() {
+interface AppProps {
+    content: string;
+    isCompleted: boolean;
+}
+
+export function TaskList({ content, onDeleteComment }: any) {
+    
+    function handleDeleteComment() {
+        onDeleteComment(content)
+    }
+
     return (
-        <div className={style.content}>
-            <div className={style.top}>
-                <div className={style.start}>
+        <div className={style.container}>
+           <div className={style.content}>
+                <input 
+                    id="checkboxId" 
+                    type="checkbox" 
+                />
 
-                    <p>
-                        Tarefas Criadas
-                        <span>0</span>
-                    </p>
+                <p>{content}</p>
+           </div>
+            <button onClick={handleDeleteComment} className={style.icon}>
+                <Trash size={20} />
+            </button>
 
-                </div>
-                <div className={style.end}>
-
-                    <p>
-                        Concluidas
-                        <span>0</span>
-                    </p>
-
-                </div>
-            </div>
-            <footer className={style.bottom}>
-                <img src={logo} alt="logo" />
-                <p className={style.pOne}>Você ainda não tem tarefas cadastradas</p>
-                <p className={style.pTwo}>Crie tarefas e organize seus itens a fazer</p>
-            </footer>
+          
         </div>
-
     )
-
 }

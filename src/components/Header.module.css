@@ -35,7 +35,7 @@
 
 .button {
     width: 5.6rem;
-    height: 3rem;
+    height: 2.8rem;
 
     border: none;
     border-radius: 8px;
@@ -49,6 +49,48 @@
     font-weight: 500;
     color: white;
     background-color: var(--blue-dark);
+    margin-top: -1rem;
 }
 
 
+.names {
+    max-width: 49rem;
+    margin: auto;
+    margin-top: 6rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    
+    
+
+}
+
+.names p {
+    color: var(--blue);
+    font: bold;
+    font-weight: 700;
+}
+
+.names span {
+    margin-left: 0.5rem;
+    background: var(--gray-400);
+    padding: 0.15rem 0.5rem 0rem 0.2rem;
+    border-radius: 50%; 
+    
+}
+
+.line {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    margin-top: 4rem;
+    border-top: 1px solid white;
+    max-width: 49rem;
+    margin: auto;
+    border-top-left-radius: 8px;
+    
+    border-top-right-radius: 8px;
+}

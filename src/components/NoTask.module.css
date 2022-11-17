@@ -1,0 +1,19 @@
+.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: -8rem;
+    
+}
+
+p {
+    margin-top: 10px;
+    color: var(--gray-300);;
+}
+
+.pOne {
+    color: var(--gray-400);
+    font-weight: 700;
+}

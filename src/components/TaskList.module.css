@@ -1,77 +1,49 @@
-.content {
-    max-width: 49rem;
-    height: 17rem;
-    margin: auto;
-    margin-top: 4rem;
-
-}
-
-.top {
+.container {
+    color: white;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}   
-
-
-.start {
-    color: var(--blue);
-    font: bold;
-    font-weight: 700;
-
-}
-
-.start span {
-    
-    margin-left: 1rem;
-    background: var(--gray-400);
-    padding: 0.2rem 0.7rem;
-    border-radius: 16px;
-    
-}
-
-.end {
-    color: var(--blue);
-    font: bold;
-    font-weight: 700;
-}
-
-.end span {
-    margin-left: 1rem; 
-    background: var(--gray-400);
-    padding: 0.2rem 0.7rem;
-    border-radius: 16px;
-}
-
-
-
-.bottom {
-
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
-    border-top: 1px solid var(--gray-400);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-.bottom img {
+    flex-direction: column;
     margin-top: 4rem;
     
+    max-width: 49rem;
+    margin: auto;
+   
+   
 }
 
-.pOne {
+.container + .container {
+    margin-top: -1rem;
+}
+
+.content {
     margin-top: 1rem;
-    color: var(--gray-300);
-    font-weight: 700;
-    font: bold;
+    max-width: 49rem;
+    width: 48rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid white;
+    height: 4.5rem;
+    border-radius: 16px;
+
 }
 
-.pTwo {
-  
-    margin-top: 0.3rem;
-    color: var(--gray-300);
-      
+
+input {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
+.icon {
+    position: relative;
+    top: -4.5rem;
+    left: 23rem;
+    background: var(--gray-600);
+    border: none;
+    color: var(--gray-300);
+    cursor: pointer;
+    
+}

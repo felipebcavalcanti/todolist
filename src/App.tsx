@@ -1,31 +1,27 @@
 import { Header } from "./components/Header";
-import {  TaskList } from "./components/TaskList";
-import { NewTask } from "./components/NewTask";
+import { TaskList } from "./components/TaskList";
 
 
 import "./global.css";
 
-const task =[
-  {
-      id: 1,
-      isComplete: true,
-      content: ["simply dummy text of the printing and typesetting industry"]
 
+const tasks =[
+  {
+    id: 1,
+    content: "Aqui vai uma nova tarefa",
+    isCompleted: true,
   },
   {
-      id: 2,
-      isComplete: true,
-      content: ["simply dummy text of the printing and typesetting industry123123"]
-
+    id: 2,
+    content: "Aqui vai uma nova tarefa de novo",
+    isCompleted: true,
   },
   {
     id: 3,
-    isComplete: true,
-    content: ["simply dummy text of the printing and typesetting industry35345345t"]
-
-},
-]
-
+    content: "Aqui vai uma nova tarefa de novo e denovo",
+    isCompleted: true,
+  },
+];
 
 function App() {
  
@@ -34,21 +30,17 @@ function App() {
     <div className="App">
       <div>
         <Header />
-        <div className="wrapper">
-          
-          <TaskList />
-          {task.map(task => {
-            return ( 
-            <NewTask
+        {tasks.map(task => {
+          return (
+            <TaskList 
             key={task.id}
             content={task.content}
-            isComplete={task.isComplete}
-            />)
-          })}
-          
-          
-        </div>
-        
+            isCompleted={task.isCompleted}
+            />
+          )
+        })}
+       
+         
       </div>
     </div>
   )
